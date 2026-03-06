@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>點擊領取驚喜禮包</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #ff4757;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: scale(1.05);
+            background-color: #ff6b81;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎁 你收到了一個專屬禮包！</h1>
+        <p>點擊下方按鈕領取你的驚喜內容</p>
+        <button onclick="rickroll()">點我領取</button>
+    </div>
+
+    <script>
+        function rickroll() {
+            // 直接跳轉到經典瑞克搖影片
+            window.location.href = "https://l.threads.com/?u=https%3A%2F%2Fyoutu.be%2FdQw4w9WgXcQ%3Fsi%3D7DyE7mir82HmN_KJ&e=AT6WDj1Fz353mbDKSnNYPZlqnIuTmAto6DQK3VKC5b5BSeLNiROpxcKOfDw4DmRwC2803mMH1lUL8I1MMtrHVJsg0QmeVguICbfhAZdfVv2mb6CikHusq90hvR-8Eb-Y";
+        }
+    </script>
+</body>
+</html>
