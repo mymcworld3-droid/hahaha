@@ -4,7 +4,7 @@ const el=id=>document.getElementById(id),src=el('source'),out=el('result'),edito
 const count=s=>(s.match(/[\u3400-\u9fff]|[A-Za-z0-9]+/g)||[]).length;
 let units=[],pos=0,stack=[],skillP=null,vocab=[],dirty=false;
 const rules=[
-[/至關重要/g,'重要','刪除過度強調'],[/深入探討/g,'討論','精簡動詞'],[/充分彰顯(?:了)?/g,'顯示','精簡讚美'],
+[/至關重要/g,'很重要','刪除過度強調'],[/深入探討/g,'討論','精簡動詞'],[/充分彰顯(?:了)?/g,'顯示','精簡讚美'],
 [/大約在(?=[一二三四五六七八九十百\d])/g,'約在','精簡時間說法'],
 [/逐漸傳到其他歐洲地區/g,'傳到歐洲其他地區','刪除重複修飾'],
 [/最大的問題其實是/g,'最大的問題是','刪除多餘強調'],
