@@ -83,5 +83,5 @@ el('copy').onclick=async()=>{try{await navigator.clipboard.writeText(out.value);
 el('download').onclick=()=>{const blob=new Blob([out.value],{type:'text/plain;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='文字修訂稿.txt';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};
 el('compare').onclick=()=>{compare();el('diff').scrollIntoView({block:'nearest',behavior:'smooth'});};
 src.addEventListener('input',()=>{stats();if(units.length)setStatus('原文已更新，請重新分析。');});out.addEventListener('input',()=>{dirty=true;stats();compare();});
-stats();show();compare();window.humanizerApp={version:'3.1',run,propose,splitText,getState:()=>({total:units.length,changed:units.filter(x=>x.now!==x.raw).length})};
+stats();show();compare();window.humanizerApp={version:'3.2',run,propose,splitText,getState:()=>({total:units.length,changed:units.filter(x=>x.now!==x.raw).length})};
 })();
